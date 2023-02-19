@@ -1,0 +1,239 @@
+/* === BANNER === */
+.banner {
+  margin-top: 85px;
+}
+
+.banner__container {
+  display: flex;
+  align-items: center;
+  border-radius: 64px;
+  background: var(--dark-gray-color);
+}
+
+.banner__container .banner__text {
+  margin-left: 96px;
+  width: 500px;
+}
+
+.banner__text .banner__subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--blue-color);
+}
+
+.banner__text .banner__title {
+  margin-top: 8px;
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.banner__text .banner__button {
+  margin-top: 50px;
+}
+
+/* === CATEGRORY === */
+.category__top {
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.category__control {
+  align-self: end;
+}
+
+.category__item {
+  padding: 28px 12px;
+  height: 128px;
+  background: var(--gray-color);
+  border-radius: 24px;
+  text-align: center;
+}
+
+.category__item__img {
+  margin-bottom: 16px;
+}
+
+.category__item__name {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.category__item {
+  display: block;
+}
+
+/* === PRODUCTS === */
+.products__title {
+  margin-bottom: 70px;
+}
+
+.products__more {
+  margin: 0 auto;
+}
+
+/* === REASONS === */
+.reasons__title {
+  text-align: center;
+}
+
+.reasons__items {
+  margin-top: 70px;
+}
+
+.reasons__item {
+  padding: 0 40px;
+  text-align: center;
+}
+
+.reason__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background: var(--gray-color);
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.reason__title {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.reason__desc {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+/* === FEEDBACKS === */
+.feedback__wrapper {
+  padding: 48px 96px;
+  display: flex;
+  align-items: center;
+  background: var(--gray-color);
+  border-radius: 64px;
+}
+
+.feedbacks__items {
+  margin-left: 100px;
+}
+
+.feedback__img {
+  position: relative;
+  margin-bottom: 32px;
+  /* padding: 5px; */
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.feedback__img::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #FFF;
+  box-sizing: border-box;
+}
+
+.feedback__name {
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.feedback__comment {
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.feedback__date {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  color: var(--dark-color);
+  text-align: end;
+}
+
+.feedbacks__navigation {
+  margin-top: 50px;
+}
+
+.feedbacks-prev, .feedbacks-next {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  cursor: pointer;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedbacks-prev:hover, .feedbacks-next:hover {
+  background: var(--main-color);
+  color: #fff;
+  border-color: var(--main-color);
+}
+
+.feedbacks-next {
+  margin-left: 10px;
+}
+
+.feedbacks__pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: var(--main-color);
+  opacity: 1;
+  border: 1px solid;
+  border-color: var(--gray-color);
+}
+
+.feedbacks__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #FFF;
+  border-color: var(--main-color);
+}
+
+/* === NEWSLETTER === */
+.newsletter__wrapper {
+  padding: 96px;
+  text-align: center;
+  background: var(--gray-color);
+  border-radius: 56px;
+}
+
+.newsletter__signup {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 600px;
+  background: #FFF;
+  border-radius: 32px;
+}
+
+.newsletter__signup__input {
+  flex-grow: 1;
+  padding: 16px 40px;
+  border-radius: 32px;
+}
